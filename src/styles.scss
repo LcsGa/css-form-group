@@ -14,14 +14,14 @@ body {
 
 @mixin form-group {
   display: flex;
-  gap: 16px;
+  gap: 20px;
 }
 
 // form-group
 .mat-form-field {
   &-wrapper {
     padding: 0 !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
   }
 
   &-subscript-wrapper {
@@ -38,6 +38,10 @@ body {
 
   &-col {
     flex-direction: column;
+  }
+
+  &-row {
+    align-items: center;
   }
 }
 
