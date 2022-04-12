@@ -12,11 +12,6 @@ body {
   height: 100vh;
 }
 
-@mixin form-group {
-  display: flex;
-  gap: 20px;
-}
-
 // form-group
 .mat-form-field {
   &-wrapper {
@@ -32,16 +27,23 @@ body {
 
 .form {
   &-col,
-  &-row {
-    @include form-group;
+  &-row,
+  &-wrapper {
+    display: flex;
+    gap: 20px;
   }
 
-  &-col {
+  &-col,
+  &-wrapper {
     flex-direction: column;
   }
 
   &-row {
     align-items: center;
+  }
+
+  &-wrapper {
+    padding-top: 4px;
   }
 }
 
